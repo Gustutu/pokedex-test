@@ -14,6 +14,7 @@ factory-boy = "*"
 pylint = "*"
 black = "*"
 pylint-django = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"

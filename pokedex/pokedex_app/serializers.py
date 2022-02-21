@@ -3,6 +3,8 @@ from pokedex_app.models import Pokedex
 
 
 class PokedexSerializer(serializers.ModelSerializer):
+    """pokedex serializer"""
+
     class Meta:
         model = Pokedex
-        fields = '__all__'
+        fields = "__all__"

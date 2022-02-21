@@ -4,9 +4,8 @@ from pokemon.views import PokemonViewSet
 
 
 router = DefaultRouter(trailing_slash=False)
-router.register('pokemon', PokemonViewSet,'pokemon')
+router.register("pokemon", PokemonViewSet, "pokemon")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]
-

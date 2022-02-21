@@ -4,9 +4,8 @@ from pokedex_app.views import PokedexView
 
 
 router = DefaultRouter(trailing_slash=False)
-router.register('pokedex', PokedexView,'pokedex')
+router.register("pokedex", PokedexView, "pokedex")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]
-

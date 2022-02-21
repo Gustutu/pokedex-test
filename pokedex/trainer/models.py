@@ -1,7 +1,7 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Trainer(models.Model):
+    """Trainer model"""
+
     pass
