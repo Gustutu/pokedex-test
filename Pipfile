@@ -8,10 +8,9 @@ django = "*"
 djangorestframework = "*"
 django-filter = "*"
 decouple = "*"
-
+factory-boy = "*"
 
 [dev-packages]
-
 pylint = "*"
 black = "*"
 pylint-django = "*"
