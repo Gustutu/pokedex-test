@@ -82,7 +82,7 @@ WSGI_APPLICATION = "pokedex.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "proreview",
+        "NAME": "pokedex",
         "USER": config("POSTGRES_USER"),
         "PASSWORD": config("POSTGRES_PASSWORD"),
         "HOST": config("HOST"),
