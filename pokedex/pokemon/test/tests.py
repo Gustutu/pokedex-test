@@ -42,3 +42,17 @@ def test_create_pokemon():
 
     response = c.post("/pokemon", data=data, format="json")
     assert response.status_code == 201
+
+
+@pytest.mark.django_db
+def test_action_give_xp():
+    """test action give xp to pokemon"""
+
+    charmeleon = PokemonCharmeleonFactory()
+    c = APIClient()
+    response = c.post(
+        "/pokemon/{}/give_xp".format(charmeleon.id),
+        data={"experience": 20},
+        format="json",
+    )
+    assert response.status_code == 200

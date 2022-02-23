@@ -14,3 +14,7 @@ class Pokemon(models.Model):
     surname = CharField(max_length=50)
     level = IntegerField()
     experience = IntegerField()
+
+    def add_xp(self, xp):
+        """add a given amount of xp to pokemon"""
+        self.experience = self.experience + xp
